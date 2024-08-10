@@ -1,6 +1,12 @@
+@font-face {
+    font-family: roboto;
+    src: url('assets/Fonts/Roboto/Roboto-Light.ttf');
+}
+
 body 
 {
     background-color: #cffafe;
+    font-family: roboto;
 
     height: 100vh;
     width: 100vw;
@@ -10,12 +16,59 @@ body
     grid-template-columns: 200px auto;
 }
 
+/* Sidebar */
 .sidebar 
 {
     background-color: #06b6d4;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.content 
+.sidebar .link-container 
+{
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.link-container > div 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-container .link 
+{
+    padding-left: 10px;
+}
+
+.link 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#logo img
+{
+    height: 50px;
+}
+
+.link img 
+{
+    height: 30px;
+}
+
+
+
+/* Content */
+.content, .sidebar 
 {
     display: grid;
     grid-template-rows: 100px auto;
