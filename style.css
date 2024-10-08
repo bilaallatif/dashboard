@@ -74,7 +74,70 @@ body
     grid-template-rows: 100px auto;
 }
 
+/* Navbar */
 .content .navbar 
 {
     background-color: #22d3ee;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    padding: 20px 40px;
+}
+
+.navbar .searchbar
+{
+    flex: 3;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 20px;
+}
+
+.searchbar img
+{
+    height: 40px;
+}
+
+.searchbar .bar
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #0e7490;
+}
+
+.navbar .login
+{
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.login .icon
+{
+    background-color: #06b6d4;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .name
+{
+    font-size: 30px;
+    font-weight: bold;
 }
